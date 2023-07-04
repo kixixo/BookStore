@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        //Declaring function to hide the receipt div on page load.
+        window.onload = function() {
+            document.getElementById("output").style.display = "none";
+        }
+    </script>
+    <title>Jenny's Bookstore</title>
+</head>
+
+<body>
+    <header>
+        <h1>Jenny's Bookstore</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Form to accept user input and purchase amount-->
+        <form name="form" onsubmit="return checkOut();" action="" method="POST">
+            <div id="noteBook" class="itemList">
+                <img src="images/dbr109-pantone-10-notebooks-product-1.jpg" alt="pantone10_notebooks" height="300" weight="300">
+                <label for="notebooks">Enter number of books  $12.00/notebook<input id="notebooks" type="text"></label>
+            </div>
+            <div id="pen" class="itemList">
+                <img src="images/multiple-pens-lede.rsquare.w700.jpg" alt="multiple_pen" height="300" weight="300">
+                <label for="pens">Enter number of pens $2.50/pen<input id="pens" type="text"></label>
+            </div>
+            <div id="bag" class="itemList">
+                <img src="images/bags.jpg" alt="multiple_bags" height="300" weight="300">
+                <label for="bags">Enter number of bags $32.50/bag<input id="bags" type="text"></label>
+            </div>
+
+            <label id="name" class="userInput" for="cName">Please enter your name<input id="cName" type="text"></label>
+            <label id="number" class="userInput" for="cNumber">Please enter your Number<input id="cNumber" type="text"></label>
+
+            <!-- Submit button and reset button grouped in the same div -->
+            <div id="chkBttn">
+                <input type="submit" value="Check Out" />
+            </div>
+        </form>
+
+        <!-- Output div containing paragraph for errors and receipt -->
+        <div id="output">
+            <p id="errors"></p>
+            <p id="receipt"></p>
+        </div>
+
+    </main>
+
+    <!--Footer Section -->
+    <footer>
+        <p>&copy; Developed, Designed &amp; Managed by Temiloluwa I. OLUGBANMU a.k.a
+            Mirakulous Tech</p>
+    </footer>
+</body>
+
+</html>

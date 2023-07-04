@@ -1,0 +1,99 @@
+body {
+    width: 960px;
+    padding: 20px;
+    margin: auto;
+}
+
+.userInfo {
+    display: block;
+}
+
+label {
+    font-size: 100%;
+}
+
+input[type="text"] {
+    padding: auto;
+}
+
+#output {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 500px;
+    background: rgb(193, 188, 238);
+    border: 1px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    word-spacing: 3px;
+}
+
+.itemList {
+    max-width: 31%;
+    float: left;
+    padding: 10px;
+}
+
+header {
+    margin: auto;
+    font-size: 150%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    margin: 0 20px 0 20px;
+}
+
+li a {
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: darkgrey;
+    font-style: oblique;
+}
+
+li a:active {
+    background-color: aliceblue;
+}
+
+img {
+    opacity: 0.8;
+}
+
+img:hover {
+    opacity: 1.0;
+}
+
+form {
+    display: block;
+    border: 1px solid black;
+}
+
+#chkBttn {
+    display: block;
+    padding: 20px;
+}
+
+.userInput {
+    float: none;
+    display: block;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 12px;
+    float: left;
+    width: 100%;
+    font-size: large;
+    background: rgb(234, 234, 238)
+}
